@@ -18,7 +18,7 @@ const HomeScreen = () => {
       <h1>The Latest Catch</h1>
       <Row>
         {products.map((product) => (
-          <Col sm={12} md={6} lg={4}>
+          <Col sm={12} md={6} lg={4} key={product._id}>
             {/* pass in the prodcut to the ProductCard  */}
             <ProductCard product={product} />
           </Col>
