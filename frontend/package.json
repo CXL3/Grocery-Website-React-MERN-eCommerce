@@ -1,8 +1,10 @@
 {
   "name": "frontend",
+  "proxy": "http://127.0.0.1:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.24.0",
     "cra-template": "1.1.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",

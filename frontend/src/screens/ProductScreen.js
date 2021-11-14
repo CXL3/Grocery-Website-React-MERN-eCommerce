@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Row,
@@ -9,11 +9,24 @@ import {
   Button,
   ButtonGroup,
 } from 'react-bootstrap'
-import products from '../products'
+import axios from 'axios'
+
 //distructure match from props
 const ProductScreen = ({ match }) => {
   // Get the prouductId from url/id, use props.match here
-  const product = products.find((product) => product._id === match.params.id)
+  // const product = products.find((product) => product._id === match.params.id)
+
+  // Let's fetch data from the backend instead
+  const [product, setProduct] = useState([])
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${match.params.id}`)
+      setProduct(data)
+    }
+    fetchProduct()
+  }, [])
+
   return (
     <>
       <Link className='btn btn-light my-3' to='/'>
