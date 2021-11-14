@@ -1,0 +1,22 @@
+{
+  "name": "groceryapp",
+  "version": "1.0.0",
+  "description": "MERN grocery shopping website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CXL3/Grocery-Website-React-MERN-eCommerce.git"
+  },
+  "author": "Claire Xi Lu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CXL3/Grocery-Website-React-MERN-eCommerce/issues"
+  },
+  "homepage": "https://github.com/CXL3/Grocery-Website-React-MERN-eCommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
