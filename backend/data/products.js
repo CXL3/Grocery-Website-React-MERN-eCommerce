@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Live Dungeness Crab',
     image: '/images/dungenesscrab1.jpg',
     description: 'live',
@@ -11,7 +10,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Live Lobsters',
     image: '/images/lobster1.jpg',
     description: 'live',
@@ -23,7 +21,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Live Geoduck',
     image: '/images/geoduck1.jpg',
     description: 'live',
@@ -35,7 +32,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Live Oysters',
     image: '/images/oyster1.jpg',
     description: 'live',
@@ -46,9 +42,8 @@ const products = [
     rating: 3,
     numReviews: 12,
   },
- 
+
   {
-    _id: '5',
     name: 'King Mackerel',
     image: '/images/kingmackerel.jpg',
     description: 'live',
