@@ -7,7 +7,7 @@ const router = express.Router()
 // We could use try catch for the errors,
 //but I am going to use express-async-handler
 
-// @desc Fetch all pructs
+// @desc Fetch all products
 // @route GET /api/products
 // @access Just me
 router.get(
@@ -21,7 +21,7 @@ router.get(
     res.json(products)
   })
 )
-// @desc Fetch single pructs
+// @desc Fetch single product
 // @route GET /api/products/:id
 // @access Just me
 router.get(
